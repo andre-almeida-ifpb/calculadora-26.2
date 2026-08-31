@@ -8,12 +8,7 @@ export default function Index() {
 
   const [expressao, setExpressao] = useState("")
 
-
-  let lado = (Math.floor(Math.min(height, width)-100)/4) - 2;
-
-  if (lado*5 > height) {
-    lado = (Math.floor(Math.min(height, width)-100)/5) - 2;
-  }
+  let lado = (Math.floor(Math.min(height, width)-100)/5);
 
   return (
     <View style={styles.container}>
